@@ -1,0 +1,8 @@
+# Ignore the partial movie files created by Manim
+media/videos/matrix_addition/partial_movie_files/1080p60/*
+# Ignore Tex and text files created by Manim
+media/videos/matrix_addition/*.tex
+media/videos/matrix_addition/*.svg
+# Ignore cache files created by Manim
+__pycache__/*
+
