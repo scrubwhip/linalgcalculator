@@ -1,5 +1,5 @@
 # Ignore the partial movie files created by Manim
-media/videos/matrix_addition/partial_movie_files/1080p60/*
+media/videos/matrix_addition/1080p60/partial_movie_files/*
 # Ignore Tex and text files created by Manim
 media/videos/matrix_addition/*.tex
 media/videos/matrix_addition/*.svg

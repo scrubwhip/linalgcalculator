@@ -8,6 +8,7 @@ class Adding(Scene):
 		template.add_to_preamble(r"\usepackage{xcolor}")
 
 		grid = NumberPlane((-10,10),(-10,10))
+		grid.background_lines.set_opacity(0.2)
 
 
 		matrixAtext = MathTex(r"""\begin{bmatrix} {\color{red}1} & {\color{blue}0} \\ {\color{red}1} & {\color{blue}1} \end{bmatrix}""",
@@ -63,13 +64,7 @@ class Adding(Scene):
 		)
 
 		addText = MathTex(r"""+""", font_size = 60)
-		addText.next_to(matrixAGroup, RIGHT, buff=0.5)
-		# vector_ci = Vector([1,2])
-		# vector_ci.shift(1*RIGHT)
-		# vector_cj = Vector([2,1])
-		# vector_cj.shift(1*UP)
-
-		# CVectors = VGroup(vector_ci, vector_cj)
+		addText.next_to(matrixAGroup, RIGHT, buff=0.25)
 
 
 		self.play(
@@ -81,11 +76,14 @@ class Adding(Scene):
 		sumText = MathTex(r"""\begin{bmatrix} {\color{red}2} & {\color{blue}2} \\ {\color{red}3} & {\color{blue}2} \end{bmatrix}""", tex_template=template, font_size=60)
 		sumLabel = Text("A + B")
 		sumGroup = VGroup(sumText, sumLabel)
-		sumGroup.arrange(DOWN).next_to(addText, DOWN, buff=1)
+		sumGroup.arrange(DOWN).next_to(addText, DOWN, buff=3)
 
 		sum_i = Vector([2,3])
+		sum_i.set_fill(color='#EA3323', opacity=1)
 		sum_j = Vector([2,2])
+		sum_j.set_fill(color='#0000F5', opacity=1)
 		SumVectors = VGroup(sum_i, sum_j)
+
 		self.play(
 			FadeOut(AVectors),
 			FadeOut(BVectors),
