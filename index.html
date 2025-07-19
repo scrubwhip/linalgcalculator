@@ -9,27 +9,29 @@
 </head>
 
 <body>
+<div class="introduction">
 <div class="box"></div>
-  <div id="customheader">
+  <div id="header">
     LinAlg Calculator
   </div>
-
   <div class = "subheading">
   <h4>A free, educational calculator that performs common operations on matrices, computes properties thereof, and provides helpful matrix factorizations. Everything you may need for basic linear algebra can be found here, along with helpful visualizations and intuition behind each calculation.</h4>
   <h5>Complete with information regarding your calculation's complexity and suggestions to reduce the number of necessary operations</h5>
   </div>
+</div>
 
+<div class="operations_with_title">
+<h2>Matrix Operations</h2>
 
   <div class="operations">
-    <h2>Matrix Operations</h2>
     <div class="addition">
       <img src="images/addition.png" alt="Image not found" width="300" height="250">
-      <button type="button" onclick = "window.location.href='operations/addition.html'">Addition/Subtraction</button>
+      <button type="button" onclick = "window.location.href='operations/addition.html'">Addition</button>
     </div>
 
     <div class="subtraction">
       <img src="images/subtraction.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='operations/subtraction.html'">Addition/Subtraction</button>
+      <button type="button" onclick = "window.location.href='operations/subtraction.html'">Subtraction</button>
     </div>
 
     <div class="multiplication">
@@ -42,10 +44,12 @@
       <button type="button" onclick = "window.location.href='operations/vector_projection.html'">Vector Projection</button>
     </div>
   </div>
+  </div>
 
+<div class="properties_with_title">
+  <h2>Matrix Properties</h2>
 
   <div class = "properties">
-    <h2>Matrix Properties</h2>
 
     <div class = "determinant">
       <img src="images/determinant.png" alt="Image not found">
@@ -97,9 +101,12 @@
       <button type="button" onclick = "window.location.href='properties/eigenvectors.html'">Eigenvectors</button>
     </div>
   </div>
+  </div>
+
+  <div class = "factorizations_with_title">
+    <h2>Matrix Factorizations and Decompositions</h2>
 
   <div class = "factorizations">
-    <h2>Matrix Factorizations and Decompositions</h2>
 
     <div class="row_echelon_form"> 
       <img src="images/row_echelon_form.png" alt="Image not found">
@@ -141,6 +148,7 @@
       <button type="button" onclick = "window.location.href='factorizations/gauss_jordan.html'">Gauss-Jordan Elimination</button>
     </div>
   </div>
+  </div>
 
 </body>
 
@@ -148,6 +156,6 @@
 <footer>
   <p>&copy; 2025 Linear Algebra Calculator</p>
   <p>Created by Sam Leggett</p>
-  <p><a href="https://youtube.com">Contact me</a></p>
+  <p><a href="https://github.com/scrubwhip">Check out my GitHub</a></p>
 </footer>
 </html>
