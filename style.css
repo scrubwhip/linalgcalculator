@@ -1,1 +1,17 @@
+.outer {
+    border: 3px solid black;
+}
 
+.ellipse {
+    width: 300px;
+    height: 100px;
+    baground-color: #B4CFB4;
+    border-radius: 50px;
+}
+
+.h1 {
+    font: monaco, monospace;
+    font-size: 40px;
+    text-align: left;
+    padding: 10px;
+}

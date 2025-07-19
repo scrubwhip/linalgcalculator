@@ -7,8 +7,8 @@
 </head>
 
 <body>
-  <h1>Linear Algebra Calculator</h1>
-  <p>Welcome to my Linear Algebra Calculator!</p>
+  <div class = "outer"><div class="ellipse"><h1>Linear Algebra Calculator</h1></div></div>
+  <p>A free, educational calculator that performs common matrix operations with helpful visualizations!</p>
 
   <div class="operations">
     <h2>Operations</h2>
@@ -17,8 +17,12 @@
       <img src="images/addition.png" alt="Image not found">
       <button type="button" onclick = "window.location.href='operations/addition_subtraction.html'">Addition/Subtraction</button>
     </div>
-    <button type="button" onclick = "window.location.href='operations/multiplication.html'">Multiplication</button>
-    <button type="button" onclick = "window.location.href='operations/determinant.html'">Determinant</button>
+    <div class="multiplication">
+      <img src="images/multiplication.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='operations/multiplication.html'">Multiplication</button>
+    </div>
+    
+    <button type="button"  onclick = "window.location.href='operations/determinant.html'">Determinant</button>
     <button type="button" onclick = "window.location.href='operations/transpose.html'">Transpose</button>
     <button type="button" onclick = "window.location.href='operations/inverse.html'">Inverse</button>
     <button type="button" onclick = "window.location.href='operations/QR.html'">QR</button>
