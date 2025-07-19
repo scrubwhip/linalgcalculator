@@ -15,8 +15,31 @@
 
 #customheader {
     font-family: "Monaco", monospace;
-    color: 0xFFFFFF;
+    color: 0x000000;
     font-size: 30px;
     position: absolute;
     z-index: 1000;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    top: 20px;
+    left: 20px;
+}
+
+.subheading{
+    font-family: "Monaco", monospace;
+    color: 0xFFFFFF;
+    font-size: 20px;
+    position: absolute;
+    z-index: 1000;
+    top: 100px;
+    left: 20px;
+}
+
+.operations {
+    font-family: "Monaco", monospace;
+    color: 0xFFFFFF;
+    font-size: 20px;
+    position: absolute;
+    z-index: 1000;
+    top: 150px;
+    left: 20px;
 }
