@@ -6,37 +6,45 @@
     color: black;
 }
 
+.title_wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 60px auto 20px auto; /* top spacing, auto center */
+}
+
 .box {
   width: 100px;
   height: 100px;
   background-color: #3f7b3f;
   transform: rotate(45deg);
   position: absolute;
-  top: 40px;
-  left: 40px;
-  z-index: 1; /* Lower layer */
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 #header {
-  font-family: "Times New Roman", serif;
-  color: white;
-  font-size: 40px;
   position: absolute;
-  top: 60px;  /* Must place it slightly below .box to fully overlay it */
-  left: 60px;
-  z-index: 10; /* Higher than .box */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  /* perfect center over box */
+  z-index: 2;
+  font-family: "Times New Roman", serif;
+  font-size: 24px;
+  color: white;
+  text-align: center;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.subheading{
-    font-family: "Monaco", monospace;
-    color: white;
-    font-size: 16px;
-    text-align: left;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    padding: 0 20px;
-
+.subheading {
+  font-family: "Monaco", monospace;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  max-width: 800px;
+  margin: 10px auto 30px auto;
+  padding: 0 20px;
 }
 
 /* Allocates space between headers and button/image pairs, styles titles */
