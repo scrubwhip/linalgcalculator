@@ -7,12 +7,14 @@
 }
 
 .box {
-    width: 100px;
-    height: 100px;
-    background-color: #3f7b3f;
-    transform: rotate(45deg);
-    position: absolute;
-    z-index: 0;
+  width: 100px;
+  height: 100px;
+  background-color: #3f7b3f;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 1; /* Lower layer */
 }
 
 #header {
@@ -20,11 +22,10 @@
   color: white;
   font-size: 40px;
   position: absolute;
-  top: 40px;
-  left: 40px;
-  z-index: 1000;  /* Must be higher than .box */
+  top: 60px;  /* Must place it slightly below .box to fully overlay it */
+  left: 60px;
+  z-index: 10; /* Higher than .box */
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  text-align: left;
 }
 
 .subheading{
