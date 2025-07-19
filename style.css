@@ -30,7 +30,7 @@
     font-size: 20px;
     position: absolute;
     z-index: 1000;
-    top: 300px;
+    top: 150px;
     left: 20px;
 }
 
@@ -40,6 +40,26 @@
     font-size: 20px;
     position: absolute;
     z-index: 1000;
+    top: 300px;
+    left: 20px;
+}
+
+.properties {
+    font-family: "Monaco", monospace;
+    color: 0xFFFFFF;
+    font-size: 20px;
+    position: absolute;
+    z-index: 1000;
     top: 600px;
+    left: 20px;
+}
+
+.factorizations {
+    font-family: "Monaco", monospace;
+    color: 0xFFFFFF;
+    font-size: 20px;
+    position: absolute;
+    z-index: 1000;
+    top: 900px;
     left: 20px;
 }

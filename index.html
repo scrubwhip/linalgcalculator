@@ -15,58 +15,133 @@
   </div>
 
   <div class = "subheading">
-  <h2>A free, educational calculator that performs common matrix operations with helpful visualizations!</h2>
+  <h2>A free, educational calculator that performs common operations on matrices, computes properties thereof, and provides helpful matrix factorizations. Everything you may need for basic linear algebra can be found here, along with helpful visualizations and intuition behind each calculation.</h2>
+  <h3>Complete with information regarding your calculation's complexity and suggestions to reduce the number of necessary operations</h3>
   </div>
 
-  
+
   <div class="operations">
-    <h2>Operations</h2>
-    <p>Select an operation to perform:</p>
-    <div class="addition_subtraction">
-      <img src="images/addition.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='operations/addition_subtraction.html'">Addition/Subtraction</button>
+    <h2>Matrix Operations</h2>
+    <div class="addition">
+      <img src="images/addition.png" alt="Image not found" width="100" height="75">
+      <button type="button" onclick = "window.location.href='operations/addition.html'">Addition/Subtraction</button>
+    </div>
+    <div class="subtraction">
+      <img src="images/subtraction.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='operations/subtraction.html'">Addition/Subtraction</button>
     </div>
     <div class="multiplication">
       <img src="images/multiplication.png" alt="Image not found">
       <button type="button" onclick = "window.location.href='operations/multiplication.html'">Multiplication</button>
     </div>
-    
-    <button type="button"  onclick = "window.location.href='operations/determinant.html'">Determinant</button>
-    <button type="button" onclick = "window.location.href='operations/transpose.html'">Transpose</button>
-    <button type="button" onclick = "window.location.href='operations/inverse.html'">Inverse</button>
-    <button type="button" onclick = "window.location.href='operations/QR.html'">QR</button>
-    <button type="button" onclick = "window.location.href='operations/eigenvalues.html'">Eigenvalues</button>
-    <button type="button" onclick = "window.location.href='operations/eigenvectors.html'">Eigenvectors</button>
-    <button type="button" onclick = "window.location.href='operations/svd.html'">Singular Value Decomposition</button>
-    <button type="button" onclick = "window.location.href='operations/cholesky.html'">Cholesky Decomposition</button>
-    <button type="button" onclick = "window.location.href='operations/LU.html'">LU Decomposition</button>
-    <button type="button" onclick = "window.location.href='operations/gaussian_elimination.html'">Gaussian Elimination</button>
-    <button type="button" onclick = "window.location.href='operations/gauss_jordan.html'">Gauss-Jordan Elimination</button>
-    <button type="button" onclick = "window.location.href='operations/rank.html'">Rank, Nullity</button>
-    <button type="button" onclick = "window.location.href='operations/basis.html'">Basis of a Vector Space</button>
-    <button type="button" onclick = "window.location.href='operations/dimension.html'">Dimension of a Vector Space</button>
+    <div class="vector_projection">
+      <img src="images/vector_projection.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='operations/vector_projection.html'">Vector Projection</button>
+    </div>
   </div>
-  <div class = "links">
-  <ul>
-    <li><a href = "operations/addition_subtraction.html">Addition/Subtraction</a></li>
-    <li><a href = "operations/multiplication.html">Multiplication</a></li>
-    <li><a href = "operations/determinant.html">Determinant</a></li>
-    <li><a href = "operations/transpose.html">Transpose</a></li>
-    <li><a href = "operations/inverse.html">Inverse</a></li>
-    <li><a href = "operations/QR.html">QR</a></li>
-    <li><a href = "operations/eigenvalues.html">Eigenvalues</a></li>
-    <li><a href = "operations/eigenvectors.html">Eigenvectors</a></li>
-    <li><a href = "operations/svd.hmtl">Singular Value Decomposition</a></li>
-    <li><a href = "operations/cholesky">Cholesky Decomposition</a></li>
-    <li><a href = "operations/LU.html">LU Decomposition</a></li>
-    <li><a href = "operations/gaussian_elimination.html">Gaussian Elimination</a></li>
-    <li><a href = "operations/gauss_jordan.html">Gauss-Jordan Elimination</a></li>
-    <li><a href = "operations/rank.html">Rank of a Matrix</a></li>
-    <li><a href = "operations/basis.html">Basis of a Vector Space</a></li>
-    <li><a href = "operations/dimension.html">Dimension of a Vector Space</a></li>
-  </ul>
+
+
+  <div class = "properties">
+    <h2>Matrix Properties</h2>
+
+    <div class = "determinant">
+      <img src="images/determinant.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='properties/determinant.html'">Determinant</button>
+    </div>
+
+    <div class = "transpose">
+      <img src="images/transpose.png" alt="Image not found">
+      <button type="button" onclick="window.location.href='properties/transpose.html'">Transpose</button>
+    </div>
+
+    <div class="inverse">
+      <img src="images/inverse.html" alt="Image not found">
+      <button type="button" onclick="window.location.href='properties/inverse.html'">Inverse</button>
+    </div>
+
+    <div class="rank_nullity">
+      <img src="images/rank_nullity.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='properties/rank_nullity.html'">Rank, Nullity</button>
+    </div>
+
+    <div class="basis">
+      <img src="images/basis.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='properties/basis.html'">Basis of Column/Row Space</button>
+    </div>
+
+    <div class="dimension">
+      <img src="images/dimension.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='properties/dimension.html'">Dimension of Column/Row Space</button>
+    </div>
+
+    <div class="orthonormal_basis">
+      <img src="images/orthonormal_basis.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='properties/orthonormal_basis.html'">Orthonormal Basis</button>
+    </div>
+
+    <div class="permutation_matrix">
+      <img src="images/permutation_matrix.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='properties/permutation_matrix.html'">Permutation Matrix</button>
+    </div>
+
+    <div class="eigenvalues">
+      <img src="images/eigenvalues.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='properties/eigenvalues.html'">Eigenvalues</button>
+    </div>
+
+    <div class="eigenvectors">
+      <img src="images/eigenvectors.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='properties/eigenvectors.html'">Eigenvectors</button>
+    </div>
   </div>
+
+  <div class = "factorizations">
+    <h2>Matrix Factorizations and Decompositions</h2>
+
+    <div class="row_echelon_form"> 
+      <img src="images/row_echelon_form.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='factorizations/row_echelon.html'">Row Echelon Form</button>
+    </div>
+
+    <div class="LU">
+      <img src="images/LU.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='factorizations/LU.html'">LU Decomposition</button>
+    </div>
+
+    <div class="QR">
+      <img src="images/QR.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='factorizations/QR.html'">QR Factorization</button>
+    </div>
+
+    <div class="diagonalization">
+      <img src="images/diagonalization.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='factorizations/diagonalization.html'">Diagonalization</button>
+    </div>
+
+    <div class="SVD">
+      <img src="images/SVD.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='factorizations/svd.html'">Singular Value Decomposition</button>
+    </div>
+
+    <div class="cholesky">
+      <img src="images/cholesky.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='factorizations/cholesky.html'">Cholesky Decomposition</button>
+    </div>
+
+    <div class="gaussian_elimination">
+      <img src="images/gaussian_elimination.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='factorizations/gaussian_elimination.html'">Gaussian Elimination</button>
+    </div>
+
+    <div class="gauss_jordan">
+      <img src="images/gauss_jordan.png" alt="Image not found">
+      <button type="button" onclick = "window.location.href='factorizations/gauss_jordan.html'">Gauss-Jordan Elimination</button>
+    </div>
+  </div>
+
 </body>
+
+
 <footer>
   <p>&copy; 2025 Linear Algebra Calculator</p>
   <p>Created by Sam Leggett</p>
