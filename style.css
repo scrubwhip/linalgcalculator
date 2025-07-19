@@ -16,22 +16,23 @@
 }
 
 #header {
-    font-family: "Times New Roman", serif;
-    color: white;
-    font-size: 40px;
-    z-index: 1000;
-    position: relative;
-    margin-top: 20px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    text-align: left;
+  font-family: "Times New Roman", serif;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 1000;  /* Must be higher than .box */
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: left;
 }
 
 .subheading{
     font-family: "Monaco", monospace;
-    color: 0xFFFFFF;
+    color: white;
     font-size: 16px;
     text-align: left;
-    margin-top: 130px;
+    margin-top: 50px;
     margin-bottom: 20px;
     padding: 0 20px;
 
