@@ -5,8 +5,9 @@
 .ellipse {
     width: 300px;
     height: 100px;
-    baground-color: #B4CFB4;
+    background-color: #B4CFB4;
     border-radius: 50px;
+    transform: rotate(0.8turn);
 }
 
 .h1 {
