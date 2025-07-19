@@ -6,11 +6,11 @@
     color: black;
 }
 
-.title_wrapper {
+.title-wrapper {
   position: relative;
   width: 100px;
   height: 100px;
-  margin: 60px auto 20px auto; /* top spacing, auto center */
+  margin: 80px auto 20px auto;  /* Top margin creates vertical spacing */
 }
 
 .box {
@@ -28,7 +28,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);  /* perfect center over box */
+  transform: translate(-50%, -50%);  /* Center inside box */
   z-index: 2;
   font-family: "Times New Roman", serif;
   font-size: 24px;
@@ -43,7 +43,7 @@
   font-size: 16px;
   text-align: center;
   max-width: 800px;
-  margin: 10px auto 30px auto;
+  margin: 10px auto 40px auto;
   padding: 0 20px;
 }
 
