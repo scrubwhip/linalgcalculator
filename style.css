@@ -19,18 +19,16 @@
     font-family: "Times New Roman", serif;
     color: white;
     font-size: 40px;
-    position: absolute;
     z-index: 1000;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    top: 50px;
-    left: 50px;
+    text-align: left;
 }
 
 .subheading{
     font-family: "Monaco", monospace;
     color: 0xFFFFFF;
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     margin-top: 20px; 
     padding: 20px;
 }
@@ -82,7 +80,7 @@
 .factorizations img {
     display: block;
     margin: auto;
-    width: 200px;
+    width: 144px;
     height: auto;
 }
 
@@ -98,7 +96,7 @@
     /* Space between button and image; space between borders and text */
     margin-top: 10px;
     padding: 8px 12px;
-    font-size: 20px;
+    font-size: 16px;
 
     /* Cursor changes when hovering over button */
     cursor: pointer;
