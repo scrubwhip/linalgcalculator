@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     color: black;
+    border: black 2px dashed;
 }
 
 .title_wrapper img {
@@ -10,12 +11,21 @@
   top: 0;
   left: 0;
   z-index: 1;
+
+
+  border: black 2px dashed;
+}
+
+.title_wrapper{
+  border: black 2px dashed;
 }
 
 #header {
   position: absolute;
   top: 32px;
-  left: 160px;
+  left: 220px;
+  white-space: nowrap;
+  width: calc(100% - 240px);
   z-index: 2;
   font-family: "Georgia", serif;
   font-size: 70px;
@@ -23,18 +33,22 @@
   color: white;
   text-align: left;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+
+  border: black 2px dashed;
 }
 
 .subheading {
   font-family: "Georgia", serif;
+  text-overflow: ellipsis;
   color: black;
   font-size: 12px;
   font-style: italic;
   text-align: center;
   max-width: 800px;
-  margin: 10px auto 40px auto;
-  margin-top: 200px;
-  padding: 0 20px;
+  margin-top: 130px;
+
+  border: black 2px dashed;
 }
 
 /* Allocates space between headers and button/image pairs, styles titles */
@@ -46,13 +60,13 @@
     color: 0xFFFFFF;
     font-size: 32px;
     text-align: center;
-    padding: 10px;
 }
 
 .operations_with_title,
 .properties_with_title,
 .factorizations_with_title {
-  border: RGB(150, 200, 255) 5px solid;
+  border: black 2px dashed;
+  margin-top: 10px;
 }
 
 .operations,
@@ -68,11 +82,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
 
     /*Ensures the sections do not overlap with each other */
     padding: 10px 10px;
     margin-top: 10px;
+
+    border: black 2px dashed;
 }
 
 /* Allocates space between each button/image pair */
@@ -80,8 +95,9 @@
 .properties div,
 .factorizations div {
     display: inline-block;
-    margin: 10px;
+    margin: 20px;
     vertical-align: top;
+    border: black 2px dashed;
 }
 
 /* Styles the images in the 3 main sections */
@@ -92,6 +108,7 @@
     margin: auto;
     width: 144px;
     height: auto;
+    border: black 2px dashed;
 }
 
 /* Styles the buttons in the 3 main sections */
@@ -124,4 +141,6 @@
     z-index: 1000;
     bottom: 20px;
     left: 20px;
+
+    border: black 2px dashed;
 }
