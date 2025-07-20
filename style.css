@@ -6,6 +6,33 @@
     border: black 2px dashed;
 }
 
+.minititle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.minititle img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.minititle h1 {
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 0;
+  margin-left: 140px;
+  padding-top: 20px;
+  white-space: nowrap;
+
+  color: white;
+  text-align: left;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 .title_wrapper img {
   position: absolute;
   top: 0;
@@ -20,7 +47,7 @@
   border: black 2px dashed;
 }
 
-#header {
+.title {
   position: absolute;
   top: 32px;
   left: 220px;
@@ -38,7 +65,7 @@
   border: black 2px dashed;
 }
 
-.subheading {
+.subtitle {
   font-family: "Georgia", serif;
   text-overflow: ellipsis;
   color: black;
