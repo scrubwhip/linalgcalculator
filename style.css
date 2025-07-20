@@ -6,13 +6,6 @@
     color: black;
 }
 
-.title_wrapper {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  margin: 80px auto 20px auto;  /* Top margin creates vertical spacing */
-}
-
 .box {
   width: 100px;
   height: 100px;
@@ -24,7 +17,7 @@
   z-index: 1;
 }
 
-.title_wrapper img{
+.title_wrapper img {
   position: absolute;
   top: 0;
   left: 0;
@@ -33,20 +26,21 @@
 
 #header {
   position: absolute;
-  top: 50%;
-  left: 20px;
+  top: 20px;
+  left: 150px;
   z-index: 2;
   font-family: "Times New Roman", serif;
   font-size: 24px;
   color: white;
-  text-align: center;
+  text-align: left;
+  max-width: 800px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .subheading {
   font-family: "Monaco", monospace;
-  color: white;
-  font-size: 16px;
+  color: black;
+  font-size: 12px;
   text-align: center;
   max-width: 800px;
   margin: 10px auto 40px auto;
