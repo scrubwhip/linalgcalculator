@@ -2,10 +2,8 @@
 
 ### A free, educational calculator that performs basic matrix operations and provides helpful visuals!
 
-## How to access
+## Access and use
 
-## How to use
+## Inspiration
 
-## Development
-
-## Future improvements
+## Future Development
