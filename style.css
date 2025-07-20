@@ -159,6 +159,46 @@
     cursor: pointer;
 }
 
+.calculator{
+  margin: 120px 110px;
+  white-space: nowrap;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.calculator input {
+    width: 30px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.calculator label {
+    margin-left: 20px;
+}
+
+.matrix_a_inputs,
+.matrix_b_inputs {
+  margin: 20px 0px;
+}
+
+.matrix_entries {
+  margin: 10px 0px;
+}
+
+.matrix {
+  padding: 10px 0px;
+}
+
+.calculator input,
+.resultCell,
+.cell {
+  margin: 5px 5px;
+  width: auto;
+  padding: 5px;
+}
+
+
 .footer{
     font-family: "Monaco", monospace;
     color: 0xFFFFFF;
