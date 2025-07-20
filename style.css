@@ -24,11 +24,17 @@
   z-index: 1;
 }
 
+.title_wrapper img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 #header {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);  /* Center inside box */
+  left: 20px;
   z-index: 2;
   font-family: "Times New Roman", serif;
   font-size: 24px;
