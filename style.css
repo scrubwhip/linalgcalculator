@@ -1,20 +1,8 @@
 .body{
     font-family:'Times New Roman', Times, serif;
-    background-color: #B4CFB4;
     margin: 0;
     padding: 0;
     color: black;
-}
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: #3f7b3f;
-  transform: rotate(45deg);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 .title_wrapper img {
@@ -26,24 +14,26 @@
 
 #header {
   position: absolute;
-  top: 20px;
-  left: 150px;
+  top: 32px;
+  left: 160px;
   z-index: 2;
-  font-family: "Times New Roman", serif;
-  font-size: 24px;
+  font-family: "Georgia", serif;
+  font-size: 70px;
+  font-weight: bold;
   color: white;
   text-align: left;
-  max-width: 800px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .subheading {
-  font-family: "Monaco", monospace;
+  font-family: "Georgia", serif;
   color: black;
   font-size: 12px;
+  font-style: italic;
   text-align: center;
   max-width: 800px;
   margin: 10px auto 40px auto;
+  margin-top: 200px;
   padding: 0 20px;
 }
 
@@ -51,11 +41,18 @@
 .operations_with_title h2,
 .properties_with_title h2,
 .factorizations_with_title h2 {
-    font-family: "Monaco", monospace;
+    font-family: "Georgia", serif;
+    font-weight: bold;
     color: 0xFFFFFF;
-    font-size: 20px;
+    font-size: 32px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+}
+
+.operations_with_title,
+.properties_with_title,
+.factorizations_with_title {
+  border: RGB(150, 200, 255) 5px solid;
 }
 
 .operations,
@@ -66,7 +63,6 @@
     color: 0xFFFFFF;
     font-size: 20px;
     text-align: center;
-    background-color: 0x000000;
 
     /* Alligns items in center aligned rows within their respective containers */
     display: flex;
@@ -75,8 +71,8 @@
     gap: 20px;
 
     /*Ensures the sections do not overlap with each other */
-    padding: 30px 20px;
-    margin-top: 30px;
+    padding: 10px 10px;
+    margin-top: 10px;
 }
 
 /* Allocates space between each button/image pair */
@@ -103,9 +99,12 @@
 .properties button,
 .factorizations button {
     /* Font and color */
-    font-family: "Monaco", monospace;
-    background-color: lightblue;
-    border: blue 1px solid;
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    color: white;
+    background-color: RGB(150, 200, 255);
+    border: RGB(135, 185, 240) 5px solid;
+    border-radius: 10px;
 
     /* Space between button and image; space between borders and text */
     margin-top: 10px;
