@@ -28,17 +28,17 @@
 }
 
 .minititle{
-    margin-top: 0px;
-    margin-left: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
 .minititle img {
-    margin-top: 0px;
-    margin-left: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
 .minititle h1 {
@@ -56,43 +56,50 @@
 }
 
 .title_wrapper img {
-  position: absolute;
   top: 20;
   left: 20;
+
+  position: absolute;
   z-index: 2;
+
   border-radius: 20px;
   border: green 4px solid;
 }
 
 .title_wrapper{
   height: 130px;
-  border: black 2px dashed;
+
+  border: white 1px dashed;
 }
 
 .title {
-  position: absolute;
-  top: 20px;
-  left: 220px;
-  white-space: nowrap;
-  width: calc(100% - 240px);
-  z-index: 2;
   font-family: "Georgia", serif;
   font-size: 30px;
   text-align: left;
+
+  width: calc(100% - 240px);
+
+  top: 20px;
+  left: 220px;
+
+  position: absolute;
+  z-index: 2;
+  white-space: nowrap;
 }
 
 .subtitle {
   font-family: "Georgia", serif;
-  text-overflow: ellipsis;
-  color: black;
-  font-size: 12px;
   font-style: italic;
   text-align: center;
+  font-size: 12px;
+
+  text-overflow: ellipsis;
+
   max-width: 800px;
   margin-top: 10px;
   margin-bottom: 100px;
 
-  border: black 2px dashed;
+  color: black;
 }
 
 .calculations {
@@ -104,7 +111,6 @@
 .factorizations_with_title h2 {
     font-family: "Georgia", serif;
     font-weight: bold;
-    color: 0xFFFFFF;
     font-size: 32px;
     text-align: center;
 }
@@ -112,83 +118,76 @@
 .operations_with_title,
 .properties_with_title,
 .factorizations_with_title {
-  border: black 2px dashed;
   margin-top: 10px;
 }
 
 .operations,
 .properties,
 .factorizations {
-    /* Font and color */
     font-family: "Monaco", monospace;
-    color: 0xFFFFFF;
     font-size: 20px;
     text-align: center;
 
-    /* Alligns items in center aligned rows within their respective containers */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    /*Ensures the sections do not overlap with each other */
     padding: 10px 10px;
     margin-top: 10px;
 
-    border: black 2px dashed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Allocates space between each button/image pair */
 .operations div,
 .properties div,
 .factorizations div {
-    display: inline-block;
     margin: 20px;
+
+    display: inline-block;
     vertical-align: top;
-    border: black 2px dashed;
 }
 
 /* Styles the images in the 3 main sections */
 .operations img,
 .properties img,
 .factorizations img {
-    display: block;
-    margin: auto;
-    width: 144px;
-    height: auto;
-    border: black 2px dashed;
+  width: 144px;
+  height: 0px;
+
+  display: block;
+  margin: 5px 10px;
 }
 
-/* Styles the buttons in the 3 main sections */
 .operations button,
 .properties button,
 .factorizations button {
-    /* Font and color */
-    font-family: "Georgia", serif;
-    font-weight: bold;
-    color: white;
-    background-color: RGB(150, 200, 255);
-    border: RGB(135, 185, 240) 5px solid;
-    border-radius: 10px;
+  font-family: "Georgia", serif;
+  font-weight: bold;
+  font-size: 16px;
 
-    /* Space between button and image; space between borders and text */
-    margin-top: 10px;
-    padding: 8px 12px;
-    font-size: 16px;
+  margin-top: 10px;
+  padding: 8px 12px;
 
-    /* Cursor changes when hovering over button */
-    cursor: pointer;
+  cursor: pointer;
+
+  color: white;
+  background-color: RGB(150, 200, 255);
+  border: RGB(135, 185, 240) 5px solid;
+  border-radius: 10px;
 }
 
 .calculator{
-  margin: 120px 110px;
-  white-space: nowrap;
   font-family: "Georgia", serif;
   font-weight: bold;
   font-style: italic;
+
+  margin: 120px 110px;
+
+  white-space: nowrap;
 }
 
 .calculator input {
     width: 30px;
+
     padding: 5px;
     margin-left: 5px;
 }
@@ -213,21 +212,21 @@
 .calculator input,
 .resultCell,
 .cell {
-  margin: 5px 5px;
   width: auto;
+
+  margin: 5px 5px;
   padding: 5px;
 }
 
 
 .footer{
-    font-family: "Monaco", monospace;
-    color: 0xFFFFFF;
+    font-family: "Georgia", serif;
     font-size: 20px;
-    position: absolute;
-    text-align: center;
-    z-index: 1000;
+
     bottom: 20px;
     left: 20px;
 
-    border: black 2px dashed;
+    position: absolute;
+    text-align: center;
+    z-index: 1000;
 }
