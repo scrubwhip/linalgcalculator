@@ -1,68 +1,84 @@
 .body{
     font-family:'Times New Roman', Times, serif;
+
     margin: 0;
     padding: 0;
+
     color: black;
-    border: black 2px dashed;
+}
+
+#line1 {
+  height: 2px;
+
+  margin-right: 1%;
+  margin-left: calc(205px + 1%);
+  margin-top: 56px;
+
+  background-color: gray;
+}
+
+#line2 {
+  height: 4px;
+
+  margin-right: 0%;
+  margin-left: 20px;
+  margin-top: 71px;
+
+  background-color: green;
 }
 
 .minititle{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    margin-top: 0px;
+    margin-left: 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
 }
 
 .minititle img {
-    position: absolute;
-    top: 0;
-    left: 0;
+    margin-top: 0px;
+    margin-left: 0px;
 }
 
 .minititle h1 {
   font-family: "Georgia", serif;
   font-weight: bold;
-  font-size: 30px;
-  margin-top: 0;
-  margin-left: 140px;
-  padding-top: 20px;
+  font-size: 20px;
+  text-align: left;
+
+  margin-top: 10px;
+  margin-left: 10px;
   white-space: nowrap;
 
   color: white;
-  text-align: left;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .title_wrapper img {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-
-
-  border: black 2px dashed;
+  top: 20;
+  left: 20;
+  z-index: 2;
+  border-radius: 20px;
+  border: green 4px solid;
 }
 
 .title_wrapper{
+  height: 130px;
   border: black 2px dashed;
 }
 
 .title {
   position: absolute;
-  top: 32px;
+  top: 20px;
   left: 220px;
   white-space: nowrap;
   width: calc(100% - 240px);
   z-index: 2;
   font-family: "Georgia", serif;
-  font-size: 70px;
-  font-weight: bold;
-  color: white;
+  font-size: 30px;
   text-align: left;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
-
-  border: black 2px dashed;
 }
 
 .subtitle {
@@ -73,12 +89,16 @@
   font-style: italic;
   text-align: center;
   max-width: 800px;
-  margin-top: 130px;
+  margin-top: 10px;
+  margin-bottom: 100px;
 
   border: black 2px dashed;
 }
 
-/* Allocates space between headers and button/image pairs, styles titles */
+.calculations {
+  margin-top: 120px;
+}
+
 .operations_with_title h2,
 .properties_with_title h2,
 .factorizations_with_title h2 {
