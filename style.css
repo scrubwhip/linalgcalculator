@@ -119,6 +119,7 @@ body {
 
   justify-self: center;
   justify-items: center;
+  justify-content: center;
 
   display: flex;
   white-space: nowrap;
