@@ -53,6 +53,32 @@ body {
   white-space: nowrap;
 }
 
+.subtitle {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 15px;
+
+  margin-top: 10px;
+  padding: 0px 50px;
+
+  color: black;
+}
+
+.subtitle h3 {
+  font-style: normal;
+}
+
+.calculations {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  width: 100%;
+  margin: 20px 0;
+}
+
 .calculations_dropdown {
   font-family: "Georgia", serif;
   position: absolute;
@@ -91,38 +117,10 @@ body {
   align-self: center;
 
   display: none;
-  display: none;
   position: absolute;
   z-index: 1;
 
   background-color: RGB(135, 185, 240);
-}
-
-.subtitle {
-  font-family: "Georgia", serif;
-  font-style: italic;
-  text-align: center;
-  font-size: 15px;
-
-  margin-top: 10px;
-  padding: 0px 50px;
-
-  color: black;
-}
-
-.subtitle h3 {
-  font-style: normal;
-}
-
-.calculations {
-  margin: 10px 20px;
-
-  justify-self: center;
-  justify-items: center;
-  justify-content: center;
-
-  display: flex;
-  white-space: nowrap;
 }
 
 .factorizations_dropbtn,
@@ -162,13 +160,14 @@ body {
 
   margin: 0px 10px 0px 10px;
   padding: 0;
+  top: 100%;
+  left: 0;
 
   align-self: center;
 
   display: none;
-  display: none;
   position: absolute;
-  z-index: 1;
+  z-index: 10;
 
   background-color: RGB(135, 185, 240);
 }
@@ -268,7 +267,6 @@ body {
 
 .calculator h5 {
   font-style: italic;
-  text-wrap: wrap;
   text-align: center;
 
   width: 90%;
