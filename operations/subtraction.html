@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>Subtraction</title>
+        <link rel="stylesheet" href="../style.css">
+        <script type="module" src="operations_script/addition.js"></script>
+        <script type="module" src="../index.js"></script>
+    </head>
+
+    <body>
+        <div class = minititle>
+            <a href = "../index.html"><img src="../images/logo.png" alt="Logo not found" width="120" height = auto></a>
+            <h1>Subtraction</h1>
+        </div>
+
+        <div class = "calculator">
+            <div id = "addition_calculator">
+                <div class = "matrix_a_inputs">
+                    <label for="a-rows">Matrix A rows: <input type="number" id="a-rows" min="1" value="2"></label>
+                    <label for="a-cols">Matrix A columns: <input type="number" id="a-cols" min="1" value="2"></label>
+                </div>
+                
+                <div class = "matrix_b_inputs">
+                    <label for="b-rows">Matrix B rows: <input type="number" id="b-rows" min="1" value="2" readonly="readonly"></label>
+                    <label for="b-cols">Matrix B columns: <input type="number" id="b-cols" min="1" value="2" readonly="readonly"></label>
+                </div>
+
+                <h5>*Matrix B will default to the same dimensions as matrix A. The rows/columns in a sum of matrices represent the vector sum of the row/column vectors in each matrix, and vectors of different dimensions cannot be added.</h4>
+
+                
+                <button id="set_button">Set Matrices</button>
+                
+
+                <div class = "matrix_entries" id = "matrix_entries">
+                </div>
+
+
+                <button id = "calculate_button_addition">Calculate</button>
+
+                <div class = "result" id = "result">
+
+                <div class = "visualization">
+                    <video controls loop>
+                        <source src="../media/videos/matrix_addition/1080p60/Adding.mp4" type="video/mp4">
+                        Video not supported by browser
+                    </video>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

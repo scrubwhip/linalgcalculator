@@ -15,145 +15,64 @@
   <img src="images/logo.png" alt="Logo not found" width="200" height = auto>
 <div id="line1"></div>
 
+<!-- <div class="calculations_dropdown">
+  <button class="calculations_dropbtn">Calculations
+    <div class="calculations_content">
+      <a href="operations/addition.html">Operations</a>
+      <a href="operations/subtraction.html">Properties</a>
+      <a href="operations/addition.html">Factorizations</a>
+    </div>
+  </button>
+</div> -->
+
+</div>
 
 <div id="line2"></div>
 
 <div class = "subtitle">
   <h4>A free, educational calculator that performs common operations on matrices, computes properties thereof, and provides helpful matrix factorizations. Everything you may need for basic linear algebra can be found here, along with helpful visualizations and intuition behind each calculation.</h4>
   <h5>Complete with information regarding your calculation's complexity and suggestions to reduce the number of necessary operations</h5>
-</div>
+  <h3>Get Started:</h3>
 </div>
 
 <div class="calculations">
-<div class="operations_with_title">
-<h2>Matrix Operations</h2>
-
-  <div class="operations">
-    <div class="addition">
-      <img src="images/addition.png" alt="Image not found" width="300" height="250">
-      <button type="button" onclick = "window.location.href='operations/addition.html'">Addition</button>
-    </div>
-
-    <div class="subtraction">
-      <img src="images/subtraction.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='operations/subtraction.html'">Subtraction</button>
-    </div>
-
-    <div class="multiplication">
-      <img src="images/multiplication.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='operations/multiplication.html'">Multiplication</button>
-    </div>
-
-    <div class="vector_projection">
-      <img src="images/vector_projection.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='operations/vector_projection.html'">Vector Projection</button>
+  <div class="operations_dropdown">
+    <button class="operations_dropbtn">Operations</button>
+    <div class="operations_content">
+      <a href="operations/addition.html">Addition</a>
+      <a href="operations/subtraction.html">Subtraction</a>
+      <a href="operations/multiplication.html">Multiplication</a>
+      <a href="operations/vector_projection.html">Vector Projection</a>
     </div>
   </div>
-  </div>
 
-<div class="properties_with_title">
-  <h2>Matrix Properties</h2>
-
-  <div class = "properties">
-
-    <div class = "determinant">
-      <img src="images/determinant.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='properties/determinant.html'">Determinant</button>
-    </div>
-
-    <div class = "transpose">
-      <img src="images/transpose.png" alt="Image not found">
-      <button type="button" onclick="window.location.href='properties/transpose.html'">Transpose</button>
-    </div>
-
-    <div class="inverse">
-      <img src="images/inverse.html" alt="Image not found">
-      <button type="button" onclick="window.location.href='properties/inverse.html'">Inverse</button>
-    </div>
-
-    <div class="rank_nullity">
-      <img src="images/rank_nullity.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='properties/rank_nullity.html'">Rank, Nullity</button>
-    </div>
-
-    <div class="basis">
-      <img src="images/basis.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='properties/basis.html'">Basis of Column/Row Space</button>
-    </div>
-
-    <div class="dimension">
-      <img src="images/dimension.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='properties/dimension.html'">Dimension of Column/Row Space</button>
-    </div>
-
-    <div class="orthonormal_basis">
-      <img src="images/orthonormal_basis.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='properties/orthonormal_basis.html'">Orthonormal Basis</button>
-    </div>
-
-    <div class="permutation_matrix">
-      <img src="images/permutation_matrix.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='properties/permutation_matrix.html'">Permutation Matrix</button>
-    </div>
-
-    <div class="eigenvalues">
-      <img src="images/eigenvalues.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='properties/eigenvalues.html'">Eigenvalues</button>
-    </div>
-
-    <div class="eigenvectors">
-      <img src="images/eigenvectors.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='properties/eigenvectors.html'">Eigenvectors</button>
+  <div class="properties_dropdown">
+    <button class="properties_dropbtn">Properties</button>
+    <div class="properties_content">
+      <a href="properties/determinant.html">Determinant</a>
+      <a href="properties/inverse.html">Inverse</a>
+      <a href="properties/transpose.html">Transpose</a>
+      <a href="properties/basis.html">Basis</a>
+      <a href="properties/orthonormal_basis.html">Orthonormal Basis</a>
+      <a href="properties/dimension.html">Dimension</a>
+      <a href="properties/rank_nullity.html">Rank and Nullity</a>
+      <a href="properties/projection_matrix.html">Projection Matrix</a>
+      <a href="properties/eigenvalues.html">Eigenvalues</a>
+      <a href="properties/eigenvectors.html">Eigenvectors</a>
     </div>
   </div>
-  </div>
 
-  <div class = "factorizations_with_title">
-    <h2>Matrix Factorizations and Decompositions</h2>
-
-  <div class = "factorizations">
-
-    <div class="row_echelon_form"> 
-      <img src="images/row_echelon_form.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='factorizations/row_echelon.html'">Row Echelon Form</button>
-    </div>
-
-    <div class="LU">
-      <img src="images/LU.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='factorizations/LU.html'">LU Decomposition</button>
-    </div>
-
-    <div class="QR">
-      <img src="images/QR.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='factorizations/QR.html'">QR Factorization</button>
-    </div>
-
-    <div class="diagonalization">
-      <img src="images/diagonalization.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='factorizations/diagonalization.html'">Diagonalization</button>
-    </div>
-
-    <div class="SVD">
-      <img src="images/SVD.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='factorizations/svd.html'">Singular Value Decomposition</button>
-    </div>
-
-    <div class="cholesky">
-      <img src="images/cholesky.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='factorizations/cholesky.html'">Cholesky Decomposition</button>
-    </div>
-
-    <div class="gaussian_elimination">
-      <img src="images/gaussian_elimination.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='factorizations/gaussian_elimination.html'">Gaussian Elimination</button>
-    </div>
-
-    <div class="gauss_jordan">
-      <img src="images/gauss_jordan.png" alt="Image not found">
-      <button type="button" onclick = "window.location.href='factorizations/gauss_jordan.html'">Gauss-Jordan Elimination</button>
+  <div class="factorizations_dropdown">
+    <button class="factorizations_dropbtn">Factorizations</button>
+    <div class="factorizations_content">
+      <a href="factorizations/row_echelon.html">Row Echelon Form</a>
+      <a href="factorizations/LU.html">LU (Lower Upper)</a>
+      <a href="factorizations/QR.html">QR</a>
+      <a href="factorizations/diagonalization.html">Diagonalization</a>
+      <a href="factorizations/svd.html">SVD (Singular Value Decomposition)</a>
     </div>
   </div>
-  </div>
+
   </div>
 
 </body>

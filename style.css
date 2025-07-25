@@ -9,9 +9,7 @@ body {
 #line1 {
   height: 2px;
 
-  margin-right: 1%;
-  margin-left: calc(215px + 1%);
-  margin-top: 56px;
+  margin: 60px 10px 0px 224px;
 
   background-color: gray;
 }
@@ -20,9 +18,7 @@ body {
   height: 4px;
   width: 90%;
 
-  margin-right: 0px;
-  margin-left: 10%;
-  margin-top: 81px;
+  margin: 8px 0px 0px 10%;
 
   background-color: green;
 }
@@ -57,92 +53,155 @@ body {
   white-space: nowrap;
 }
 
-.subtitle {
+.calculations_dropdown {
   font-family: "Georgia", serif;
-  font-style: italic;
-  text-align: center;
-  font-size: 12px;
+  position: absolute;
+  z-index: 2;
 
-  width: 80%;
+  height: 40px;
+  margin: 20px 0px 0px 224px;
 
-  margin-top: 10px;
-  margin-bottom: 100px;
-
-  color: black;
+  border: 2px black dashed;
 }
 
-.calculations {
-  margin-top: 120px;
-}
-
-.operations_with_title h2,
-.properties_with_title h2,
-.factorizations_with_title h2 {
-    font-family: "Georgia", serif;
-    font-weight: bold;
-    font-size: 32px;
-    text-align: center;
-}
-
-.operations_with_title,
-.properties_with_title,
-.factorizations_with_title {
-  margin-top: 10px;
-}
-
-.operations,
-.properties,
-.factorizations {
-    font-family: "Monaco", monospace;
-    font-size: 20px;
-    text-align: center;
-
-    padding: 10px 10px;
-    margin-top: 10px;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-/* Allocates space between each button/image pair */
-.operations div,
-.properties div,
-.factorizations div {
-    margin: 20px;
-
-    display: inline-block;
-    vertical-align: top;
-}
-
-/* Styles the images in the 3 main sections */
-.operations img,
-.properties img,
-.factorizations img {
-  width: 144px;
-  height: 0px;
-
-  display: block;
-  margin: 5px 10px;
-}
-
-.operations button,
-.properties button,
-.factorizations button {
+.calculations_dropbtn {
   font-family: "Georgia", serif;
-  font-weight: bold;
   font-size: 16px;
 
-  margin-top: 10px;
-  padding: 8px 12px;
+  width: 140px;
 
+  margin: 20vh 10px 0px 10px;
+  padding: 8px 12px;
+  
   cursor: pointer;
 
   color: white;
   background-color: RGB(150, 200, 255);
   border: RGB(135, 185, 240) 5px solid;
-  border-radius: 10px;
 }
+
+.calculations_content {
+  text-align: center;
+
+  width: 140px;
+
+  margin: 0px 10px 0px 10px;
+  padding: 10px 0px;
+
+  align-self: center;
+
+  display: none;
+  display: none;
+  position: absolute;
+  z-index: 1;
+
+  background-color: RGB(135, 185, 240);
+}
+
+.subtitle {
+  font-family: "Georgia", serif;
+  font-style: italic;
+  text-align: center;
+  font-size: 15px;
+
+  margin-top: 10px;
+  padding: 0px 50px;
+
+  color: black;
+}
+
+.subtitle h3 {
+  font-style: normal;
+  font-
+}
+
+.calculations {
+  margin: 10px 20px;
+
+  justify-self: center;
+  justify-items: center;
+
+  display: flex;
+  white-space: nowrap;
+}
+
+.factorizations_dropbtn,
+.properties_dropbtn,
+.operations_dropbtn {
+  font-family: "Georgia", serif;
+  font-size: 16px;
+
+  width: 140px;
+  height: 50px;
+
+  margin: 10px 10px 0px 10px;
+  
+  cursor: pointer;
+
+  color: white;
+  background-color: RGB(150, 200, 255);
+  border: RGB(135, 185, 240) 5px solid;
+}
+
+.factorizations_dropdown,
+.properties_dropdown,
+.operations_dropdown {
+  font-family: "Georgia", serif;
+  position: relative;
+  display: inline-block;
+
+  white-space: wrap;
+}
+
+.factorizations_content,
+.properties_content,
+.operations_content {
+  text-align: center;
+
+  width: 140px;
+
+  margin: 0px 10px 0px 10px;
+  padding: 0;
+
+  align-self: center;
+
+  display: none;
+  display: none;
+  position: absolute;
+  z-index: 1;
+
+  background-color: RGB(135, 185, 240);
+}
+
+.factorizations_content a,
+.properties_content a,
+.operations_content a {
+  padding: 10px;
+
+  display: block;
+
+  color: white;
+}
+
+.factorizations_content a:hover,
+.properties_content a:hover,
+.operations_content a:hover {
+  background-color: #bde2ff;
+}
+
+.factorizations_dropdown:hover .factorizations_content,
+.properties_dropdown:hover .properties_content,
+.operations_dropdown:hover .operations_content {
+  display: block;
+}
+
+.factorizations_dropdown:hover .factorizations_dropbtn,
+.properties_dropdown:hover .properties_dropbtn,
+.operations_dropdown:hover .operations_dropbtn {
+  background-color: white;
+  color: RGB(150, 200, 255);
+}
+
 /*
 *   Calcultion pages
 */
@@ -156,8 +215,8 @@ body {
 }
 
 .minititle img {
-  margin-top: 0px;
-  margin-left: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .minititle h1 {
@@ -174,9 +233,21 @@ body {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+#minititle_line {
+  height: 4px;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: green;
+}
+
 .calculator{
   font-family: "Georgia", serif;
   font-weight: bold;
+
+
 
   display: flex;
   align-items: center;
@@ -257,10 +328,13 @@ body {
 footer {
   font-family: "Georgia", serif;
   font-size: 15px;
-  text-align: left;
+  text-align: center;
 
-  margin-left: 10px;
+  margin: 60vh 0vw;
+  margin-bottom: 0;
+  padding: 0;
 
-  display: block;
-  justify-items: center;
+  background-color: RGB(186,240,197);
+  border-top: 5px green solid;
+  border-bottom: 5px solid;
 }
