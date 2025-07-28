@@ -295,6 +295,7 @@ body {
   position: fixed;
 
   background-color: white;
+  border-bottom: 4px green solid;
 }
 
 .minititle img {
@@ -302,8 +303,6 @@ body {
   padding: 0px;
 
   position: fixed;
-
-  border-bottom: 4px green solid;
 }
 
 .minititle h1 {
@@ -333,7 +332,6 @@ body {
   z-index: 10;
 
   background-color: white;
-  border-bottom: 4px green solid;
 }
 
 .minititle .nav_menu .dropbtn {
