@@ -283,17 +283,25 @@ body {
 *   Calcultion pages
 */
 .minititle{
-  margin-top: 0px;
+  height: 80px;
+  width: 100vw;
+
+  margin-top: -120px;
   margin-left: 0px;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
+  position: fixed;
+
+  background-color: white;
 }
 
 .minititle img {
   margin: 0px;
   padding: 0px;
+
+  position: fixed;
 }
 
 .minititle h1 {
@@ -303,32 +311,34 @@ body {
   text-align: left;
 
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 140px;
   white-space: nowrap;
 
+  position: fixed;
+
   color: white;
+  background-color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .minititle .nav_menu {
   display: flex;
 
-  margin: 40px 0px 0px -100px;
-  position: relative;
+  margin: 42px 0px 0px 130px;
+  position: fixed;
   z-index: 1;
-}
 
-.minititle .videos_button {
-  border-bottom: 4px green solid;
+  background-color: white;
 }
 
 #minititle_line {
   height: 4px;
   width: 100vw;
 
-  position: relative;
+  position: fixed;
+  z-index: 10;
 
-  margin: -4px 0px 0px 0px;
+  margin: 80px 0px 0px 0px;
   padding: 0;
 
   background-color: green;
@@ -340,7 +350,7 @@ body {
 
   width: 100vw;
 
-  margin-top: 20px;
+  margin-top: 120px;
 
   display: flex;
   align-items: center;
