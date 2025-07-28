@@ -68,6 +68,8 @@ export function showMatrices(){
 
     matrixContainer.appendChild(B);
 
+    document.getElementById('calculate_button').style.display = 'block';
+
     document.getElementById('result').innerHTML = ''; // Clears previous result matrix
 
 }

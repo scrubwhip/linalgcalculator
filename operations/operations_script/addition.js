@@ -5,15 +5,15 @@ import {showMatrices, autoSetDimensions} from '../../index.js';
 */
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Addition document loaded and parsed')
-    const SetButton = document.getElementById('set_button');    // Variable for the "Set Matrices" button on addition page
-    const CalcButtonAddition = document.getElementById('calculate_button_addition');    // Variable for the "Calculate" button on addition page
+    const SetButton = document.getElementById('set_button');
+    const CalcButton = document.getElementById('calculate_button');
 
     const rowInput = document.getElementById('a-rows');
     const colInput = document.getElementById('a-cols');
 
     // Adds event listeners to button variables that control what function is called upon each button click
     SetButton.addEventListener('click', showMatrices);
-    CalcButtonAddition.addEventListener('click', calculateAddition);
+    CalcButton.addEventListener('click', calculateAddition);
 
     rowInput.addEventListener('change', autoSetDimensions);
     colInput.addEventListener('change', autoSetDimensions);

@@ -6,14 +6,14 @@ import {showMatrices, autoSetDimensions} from '../../index.js';
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Subtraction document loaded and parsed')
     const SetButton = document.getElementById('set_button');
-    const CalcButtonSubtraction = document.getElementById('calculate_button_subtraction');
+    const CalcButton = document.getElementById('calculate_button');
 
     const rowInput = document.getElementById('a-rows');
     const colInput = document.getElementById('a-cols');
 
     // Adds event listeners to button variables that control what function is called upon each button click
     SetButton.addEventListener('click', showMatrices);
-    CalcButtonSubtraction.addEventListener('click', calculateSubtraction);
+    CalcButton.addEventListener('click', calculateSubtraction);
 
     rowInput.addEventListener('change', autoSetDimensions);
     colInput.addEventListener('change', autoSetDimensions);
