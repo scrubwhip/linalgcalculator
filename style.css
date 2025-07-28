@@ -481,6 +481,7 @@ footer {
   left: 0px;
   bottom: 0px;
   margin-top: 50px;
+  padding-bottom: 10px;
 
   background-color: RGB(186,240,197);
   border-top: 5px green solid;
