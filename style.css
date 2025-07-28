@@ -359,7 +359,7 @@ body {
   font-family: "Georgia", serif;
   font-weight: bold;
 
-  width: 100vw;
+  width: 100%;
 
   margin-top: 120px;
 
@@ -388,7 +388,7 @@ body {
   font-style: italic;
   text-align: center;
 
-  width: 50vw;
+  width: 50%;
   white-space: wrap;
 
   justify-self: center;
@@ -420,23 +420,22 @@ body {
   display: none;
 }
 
-.matrix_entries h3 {
-  width: 20%;
+.matrix_entries {
+  display: flex;
+  justify-content: center;
 
-  margin-left: 40%;
+  flex-wrap: wrap;
 }
 
-.result h3 {
-  width: 20%;
-
-  margin-left: 40%;
+.matrix_entries h3 {
+  margin-left: -80px;
 }
 
 .matrix {
   width: 100%; 
 
-  margin-left: 30%;
   padding: 10px 0px;
+  margin-left: 30%;
 }
 
 .calculator input,
@@ -446,6 +445,17 @@ body {
 
   margin: 5px 5px;
   padding: 5px;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+.result h3 {
+  margin-left: -80px;
 }
 
 .visualization video{
