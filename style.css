@@ -376,10 +376,14 @@ body {
 
   padding: 5px;
   margin-left: 5px;
+
+  z-index: 1;
 }
 
 .calculator label {
     margin-left: 20px;
+
+    z-index: 1;
 }
 
 .calculator h5 {
