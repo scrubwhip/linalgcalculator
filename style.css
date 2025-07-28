@@ -119,7 +119,7 @@ body {
   border-bottom: none;
 }
 
-.calculations_dropdown:hover button {
+.title_wrapper .calculations_dropdown:hover button {
   border-left: 2px gray solid;
   border-bottom: 2px gray solid;
 }
@@ -132,7 +132,7 @@ body {
   color: white;
 }
 
-.other_dropdown:hover button {
+.title_wrapper .other_dropdown:hover button {
   border-right: 2px gray solid;
   border-bottom: 2px gray solid;
 }
@@ -302,6 +302,8 @@ body {
   padding: 0px;
 
   position: fixed;
+
+  border-bottom: 4px green solid;
 }
 
 .minititle h1 {
@@ -324,24 +326,35 @@ body {
 .minititle .nav_menu {
   display: flex;
 
-  margin: 42px 0px 0px 130px;
-  position: fixed;
-  z-index: 1;
+  width: 100%;
 
-  background-color: white;
-}
-
-#minititle_line {
-  height: 4px;
-  width: 100vw;
-
+  margin: 42px 0px 0px 128px;
   position: fixed;
   z-index: 10;
 
-  margin: 80px 0px 0px 0px;
-  padding: 0;
+  background-color: white;
+  border-bottom: 4px green solid;
+}
 
-  background-color: green;
+.minititle .nav_menu .dropbtn {
+  color: green;
+}
+
+.minititle .nav_menu .videos_button a{
+  color: green;
+}
+
+.minititle .nav_menu .dropbtn:hover,
+.minititle .nav_menu .videos_button:hover {
+  background-color: RGB(186,240,197);
+}
+
+.minititle .nav_menu .dropdown_content a{
+  color: green;
+}
+
+.minititle .nav_menu .dropdown_content a:hover{
+  background-color: RGB(186,240,197);
 }
 
 .calculator{
@@ -384,7 +397,7 @@ body {
   font-weight: bold;
   font-size: 16px;
 
-  width: 20%;
+  width: auto;
 
   margin-left: 40%;
   margin-right: 40%;
@@ -416,7 +429,7 @@ body {
 }
 
 .matrix {
-  width: 40%; 
+  width: 100%; 
 
   margin-left: 30%;
   padding: 10px 0px;
