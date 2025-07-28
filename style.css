@@ -310,11 +310,25 @@ body {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.minititle .nav_menu {
+  display: flex;
+
+  margin: 40px 0px 0px -100px;
+  position: relative;
+  z-index: 1;
+}
+
+.minititle .videos_button {
+  border-bottom: 4px green solid;
+}
+
 #minititle_line {
   height: 4px;
-  width: 100%;
+  width: 100vw;
 
-  margin: 0;
+  position: relative;
+
+  margin: -4px 0px 0px 0px;
   padding: 0;
 
   background-color: green;
@@ -324,7 +338,9 @@ body {
   font-family: "Georgia", serif;
   font-weight: bold;
 
+  width: 100vw;
 
+  margin-top: 20px;
 
   display: flex;
   align-items: center;
@@ -347,7 +363,8 @@ body {
   font-style: italic;
   text-align: center;
 
-  width: 90%;
+  width: 50vw;
+  white-space: wrap;
 
   justify-self: center;
 }
@@ -373,6 +390,12 @@ body {
 }
 
 .matrix_entries h3 {
+  width: 20%;
+
+  margin-left: 40%;
+}
+
+.result h3 {
   width: 20%;
 
   margin-left: 40%;

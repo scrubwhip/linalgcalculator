@@ -3,18 +3,41 @@
     <head> 
         <title>Subtraction</title>
         <link rel="stylesheet" href="../style.css">
-        <script type="module" src="operations_script/addition.js"></script>
+        <script type="module" src="operations_script/subtraction.js"></script>
         <script type="module" src="../index.js"></script>
     </head>
 
     <body>
         <div class = minititle>
-            <a href = "../index.html"><img src="../images/logo.png" alt="Logo not found" width="120" height = auto></a>
+            <a href = "../index.html"><img src="../images/logo.png" alt="Logo not found" width=auto height = "80"></a>
             <h1>Subtraction</h1>
+            <nav class="nav_menu">
+                <div class="calculations_dropdown">
+                    <button class="dropbtn">Calculations</button>
+                    <div class="dropdown_content">
+                        <a href="operations/addition.html">Operations</a>
+                        <a href="operations/subtraction.html">Properties</a>
+                        <a href="operations/multiplication.html">Factorizations</a>
+                    </div>
+                </div>
+
+                <button class="videos_button"><a href="../videos.html">Videos</a></button>
+   
+
+                <div class="other_dropdown">
+                    <button class="dropbtn">Other</button>
+                    <div class="dropdown_content">
+                        <a href="factorizations/row_echelon.html">About</a>
+                        <a href="factorizations/LU.html">Contact Me</a>
+                        <a href="https://github.com/scrubwhip">My Github</a>
+                    </div>
+                </div>
+            </nav>
+            <div id="minititle_line"></div>
         </div>
 
         <div class = "calculator">
-            <div id = "addition_calculator">
+            <div id = "subtraction_calculator">
                 <div class = "matrix_a_inputs">
                     <label for="a-rows">Matrix A rows: <input type="number" id="a-rows" min="1" value="2"></label>
                     <label for="a-cols">Matrix A columns: <input type="number" id="a-cols" min="1" value="2"></label>
@@ -25,7 +48,7 @@
                     <label for="b-cols">Matrix B columns: <input type="number" id="b-cols" min="1" value="2" readonly="readonly"></label>
                 </div>
 
-                <h5>*Matrix B will default to the same dimensions as matrix A. The rows/columns in a sum of matrices represent the vector sum of the row/column vectors in each matrix, and vectors of different dimensions cannot be added.</h4>
+                <h5>*Matrix B will default to the same dimensions as matrix A. The rows/columns in a difference of matrices represent a vector sum of the row/column vectors in matrix A and the negative of those in matrix B, and vectors of different dimensions cannot be added.</h4>
 
                 
                 <button id="set_button">Set Matrices</button>
@@ -35,7 +58,7 @@
                 </div>
 
 
-                <button id = "calculate_button_addition">Calculate</button>
+                <button id = "calculate_button_subtraction">Calculate</button>
 
                 <div class = "result" id = "result">
 
