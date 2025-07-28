@@ -458,11 +458,17 @@ body {
   margin-left: -80px;
 }
 
+.visualization {
+  display: flex;
+  justify-content: center;
+}
+
 .visualization video{
-  width: 80%;
+  width: 800px;
   height: auto;
 
-  margin: 10% 10%;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 footer {
@@ -470,11 +476,12 @@ footer {
   font-size: 15px;
   text-align: center;
 
-  margin: 60vh 0vw;
-  margin-bottom: 0;
-  padding: 0;
+  width: 100%;
+  
+  left: 0px;
+  bottom: 0px;
+  margin-top: 50px;
 
   background-color: RGB(186,240,197);
   border-top: 5px green solid;
-  border-bottom: 5px solid;
 }
