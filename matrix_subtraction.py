@@ -1,7 +1,7 @@
 from manim import *
 import numpy as np
 
-class Adding(Scene):
+class Subtraction(Scene):
 	def construct(self):
 		template = TexTemplate()
 		template.add_to_preamble(r"\usepackage{xcolor}")
@@ -62,40 +62,68 @@ class Adding(Scene):
 			Create(BVectors)
 		)
 
-		addText = MathTex(r"""+""", font_size = 60)
-		addText.next_to(matrixAGroup, RIGHT, buff=0.25)
-
-
+		subText = MathTex(r"""-""", font_size = 60)
+		subText.next_to(matrixAGroup, RIGHT, buff=0.25)
+		
 		self.play(
-			FadeIn(addText),
-			vector_bi.animate.shift(1*RIGHT+1*UP),
-			vector_bj.animate.shift(1*UP)
+			FadeIn(subText)
 		)
+		
+		self.wait(1)
+		
+		addText = MathTex(r"""+""", font_size=60)
+		addText.next_to(matrixAGroup, RIGHT, buff=0.25)
+		
+		newBtext = MathTex(r"""\begin{bmatrix} {\color{green}{-1}} & {\color{purple}{-2}} \\ {\color{green}{-2}} & {\color{purple}{-1}} \end{bmatrix}""", tex_template=template, font_size=60)
+		newBGroup = VGroup(newBtext, BLabel)
+		newBGroup.arrange(DOWN).next_to(matrixAGroup, RIGHT, buff=1)
+		self.add(newBGroup)
+		
+		neg_bi = Vector([-1, -2])
+		neg_bj = Vector([-2, -1])
+		neg_bi.set_fill(color='#75FB4C', opacity=1)
+		neg_bj.set_fill(color='#AF2443', opacity=1)
+		newBVectors = VGroup(neg_bi, neg_bj)
+		self.add(newBVectors)
+		
+		self.play(
+			FadeTransform(subText, addText),
+			FadeTransform(matrixBGroup, newBGroup),
+			FadeOut(BVectors),
+			FadeIn(newBVectors)
+        )
+		
+		self.wait(1)
+		
+		self.play(
+			neg_bi.animate.shift(1*RIGHT+1*UP),
+			neg_bj.animate.shift(1*UP)
+        )
 
-		sumText = MathTex(r"""\begin{bmatrix} {\color{red}2} & {\color{blue}2} \\ {\color{red}3} & {\color{blue}2} \end{bmatrix}""", tex_template=template, font_size=60)
-		sumLabel = Text("A + B")
-		sumGroup = VGroup(sumText, sumLabel)
-		sumGroup.arrange(DOWN).next_to(addText, DOWN, buff=3)
+		diffText = MathTex(r"""\begin{bmatrix} {\color{red}0} & {\color{blue}{-1}} \\ {\color{red}{-2}} & {\color{blue}0} \end{bmatrix}""", tex_template=template, font_size=60)
+		diffLabel = Text("A - B")
+		diffGroup = VGroup(diffText, diffLabel)
+		diffGroup.arrange(DOWN).next_to(addText, DOWN, buff=3)
 
-		sum_i = Vector([2,3])
-		sum_i.set_fill(color='#EA3323', opacity=1)
-		sum_j = Vector([2,2])
-		sum_j.set_fill(color='#0000F5', opacity=1)
-		SumVectors = VGroup(sum_i, sum_j)
+		diff_i = Vector([0,-1])
+		diff_i.set_fill(color='#EA3323', opacity=1)
+		diff_j = Vector([-2,0])
+		diff_j.set_fill(color='#0000F5', opacity=1)
+		diffVectors = VGroup(diff_i, diff_j)
 
 		self.play(
 			FadeOut(AVectors),
-			FadeOut(BVectors),
-			FadeIn(sumGroup), 
-			Create(SumVectors)
+			FadeOut(newBVectors),
+			FadeIn(diffGroup), 
+			Create(diffVectors)
 		)
 		self.wait(2)
 
 		self.play(
-			FadeOut(sumGroup),
-			FadeOut(SumVectors),
+			FadeOut(diffGroup),
+			FadeOut(diffVectors),
 			FadeOut(addText),
-			FadeOut(matrixBGroup),
+			FadeOut(newBGroup),
 			FadeOut(matrixAGroup),
 		)
 		self.wait(1)
