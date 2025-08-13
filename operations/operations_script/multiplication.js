@@ -1,4 +1,4 @@
-import {showMatrices, autoSetDimensionsMult} from '../../index.js';
+import {showMatrices, autoSetDimensionsNMMK} from '../../index.js';
 
 /*
 *   Establishes initial instructions for when document is loaded and parsed.
@@ -11,10 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const colInput = document.getElementById('a-cols');
 
     // Adds event listeners to button variables that control what function is called upon each button click
-    SetButton.addEventListener('click', showMatrices);
+
+    SetButton.addEventListener('click', () => showMatrices(true));
     CalcButton.addEventListener('click', calculateMultiplication);
 
-    colInput.addEventListener('change', autoSetDimensionsMult);
+    colInput.addEventListener('change', autoSetDimensionsNMMK);
 });
 
 function calculateMultiplication(){

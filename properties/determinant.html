@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>Determinant</title>
+        <link rel="stylesheet" href="../style.css">
+        <script type="module" src="properties_script/determinant.js"></script>
+        <script type="module" src="../index.js"></script>
+    </head>
 
+    <body>
+        <div class = minititle>
+            <a href = "../index.html"><img src="../images/logo.png" alt="Logo not found" width=auto height = "80"></a>
+            <h1>Determinant</h1>
+            <nav class="nav_menu">
+                <div class="calculations_dropdown">
+                    <button class="dropbtn">Calculations</button>
+                    <div class="dropdown_content">
+                        <a href="operations/addition.html">Operations</a>
+                        <a href="operations/subtraction.html">Properties</a>
+                        <a href="operations/multiplication.html">Factorizations</a>
+                    </div>
+                </div>
+
+                <button class="videos_button"><a href="../videos.html">Videos</a></button>
+   
+
+                <div class="other_dropdown">
+                    <button class="dropbtn">Other</button>
+                    <div class="dropdown_content">
+                        <a href="factorizations/row_echelon.html">About</a>
+                        <a href="factorizations/LU.html">Contact Me</a>
+                        <a href="https://github.com/scrubwhip">My Github</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <div class = "calculator">
+            <div id = "determinant_calculator">
+                <div class = "matrix_inputs">
+                    <label for="rows">Matrix rows: <input type="number" id="rows" min="1" value="2"></label>
+                    <label for="cols">Matrix columns: <input type="number" id="cols" min="1" value="2" readonly="readonly"></label>
+                </div>
+
+                
+                <button id="set_button">Set Matrix</button>
+                
+
+                <div class = "matrix_entries" id = "matrix_entries">
+                </div>
+
+
+                <button id = "calculate_button">Calculate</button>
+
+                <div class = "result" id = "result">
+
+                <div class = "visualization">
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+<footer>
+  <p>&copy; 2025 Linear Algebra Calculator</p>
+  <p>Created by Sam Leggett</p>
+  <p><a href="https://github.com/scrubwhip">Check out my GitHub</a></p>
+</footer>
+</html>

@@ -1,7 +1,7 @@
 /*
 *   Automattically sets the dimensions of a matrix B to match matrix A.
 */
-export function autoSetDimensions(){
+export function autoSetDimensionsNMNM(){
     const rows = parseInt(document.getElementById('a-rows').value);
     const cols = parseInt(document.getElementById('a-cols').value);
 
@@ -9,19 +9,19 @@ export function autoSetDimensions(){
     document.getElementById('b-cols').value = cols;
 }
 
-export function autoSetDimensionsMult(){
+export function autoSetDimensionsNMMK(){
     const cols = parseInt(document.getElementById('a-cols').value);
 
     document.getElementById('b-rows').value = cols;
 }
 
-/*
-*   Creates a grid for user entries to represent a matrix.
-*/
+export function autoSetDimensionsNN(){
+    const rows = parseInt(document.getElementById('rows').value);
+
+    document.getElementById('cols').value = rows;
+}
+
 export function createGrid(rows, cols, idPrefix) {
-    /*
-    *   <div class="matrix">
-    */
     const grid = document.createElement('div');
     grid.className = 'matrix';
 
@@ -49,27 +49,44 @@ export function createGrid(rows, cols, idPrefix) {
 *   Displays a grid of input cells for two matrices based on user-defined dimensions.
 */
 
-export function showMatrices(){
-    const aRows = parseInt(document.getElementById('a-rows').value);
-    const aCols = parseInt(document.getElementById('a-cols').value);
-    const bRows = parseInt(document.getElementById('b-rows').value);
-    const bCols = parseInt(document.getElementById('b-cols').value);
-    const matrixContainer = document.getElementById('matrix_entries');
-    matrixContainer.innerHTML = ''; // Clears previous matrix entries/grids
+export function showMatrices(twoMatrices){
+    if(twoMatrices){
+        const aRows = parseInt(document.getElementById('a-rows').value);
+        const aCols = parseInt(document.getElementById('a-cols').value);
+        const bRows = parseInt(document.getElementById('b-rows').value);
+        const bCols = parseInt(document.getElementById('b-cols').value);
+    
+        const matrixContainer = document.getElementById('matrix_entries');
+        matrixContainer.innerHTML = ''; // Clears previous matrix entries/grids
 
-    const A = createGrid(aRows, aCols, 'A');
-    const B = createGrid(bRows, bCols, 'B');
+        const A = createGrid(aRows, aCols, 'A');
+        const B = createGrid(bRows, bCols, 'B');
 
-    matrixContainer.appendChild(document.createElement('h3')).innerText = `Matrix A: ${aRows}x${aCols}`;
+        matrixContainer.appendChild(document.createElement('h3')).innerText = `Matrix A: ${aRows}x${aCols}`;
 
-    matrixContainer.appendChild(A);
+        matrixContainer.appendChild(A);
 
-    matrixContainer.appendChild(document.createElement('h3')).innerText = `Matrix B: ${bRows}x${bCols}`;
+        matrixContainer.appendChild(document.createElement('h3')).innerText = `Matrix B: ${bRows}x${bCols}`;
+        matrixContainer.appendChild(B);
 
-    matrixContainer.appendChild(B);
+        document.getElementById('calculate_button').style.display = 'block';
 
-    document.getElementById('calculate_button').style.display = 'block';
+        document.getElementById('result').innerHTML = ''; // Clears previous result matrix
+    }
 
-    document.getElementById('result').innerHTML = ''; // Clears previous result matrix
+    else {
+        const rows = parseInt(document.getElementById('rows').value);
+        const cols = parseInt(document.getElementById('cols').value);
+        const matrixContainer = document.getElementById('matrix_entries');
+        matrixContainer.innerHTML = ''; 
+
+        const A = createGrid(rows, cols, 'A');
+
+        matrixContainer.appendChild(document.createElement('h3')).innerText = `Matrix: ${rows}x${cols}`;
+        matrixContainer.appendChild(A);
+
+        document.getElementById('calculate_button').style.display = 'block';
+        document.getElementById('result').innerHTML = '';
+    }
 
 }
